@@ -10,16 +10,16 @@ let duplicateForEmbedding = require("textmate-bailout")
 
 // 1.from a url (will download the source every time)
 duplicateForEmbedding({ 
-    url: 'https://raw.githubusercontent.com/jeff-hykin/cpp-textmate-grammar/syntaxes/cpp.tmLanguage.json', 
+    url: 'https://raw.githubusercontent.com/jeff-hykin/cpp-textmate-grammar/master/syntaxes/cpp.tmLanguage.json', 
     appendScope: "latex",
-    bailoutPattern: "(?=\\\\end\\{minted\\})",
+    bailoutPattern: "\\\\end\\{minted\\}",
     newFileLocation: "cpp-latex.tmLanguage.json"
 })
 // 2.from a local file
 duplicateForEmbedding({
     grammarFilePath: "./someGrammer.tmLanguage.json",
     appendScope: "latex",
-    bailoutPattern: "(?=\\\\end\\{minted\\})",
+    bailoutPattern: "\\\\end\\{minted\\}",
     newFileLocation: "cpp-latex.tmLanguage.json"
 })
 ```

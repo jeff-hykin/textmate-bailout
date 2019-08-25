@@ -18,9 +18,7 @@
   },
   "homepage": "https://github.com/jeff-hykin/textmate_bailout#readme",
   "dependencies": {
-    "js-file-download": "^0.4.8",
-    "node-blob": "0.0.2",
-    "sync-request": "^6.1.0",
-    "yargs": "^14.0.0"
+    "lodash": "^4.17.15",
+    "sync-request": "^6.1.0"
   }
 }
