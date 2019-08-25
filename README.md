@@ -1,12 +1,12 @@
 ### What is this?
 
-This is a very specific tool that is used when you have a TextMate grammar that wants to include/contain another Textmate grammar. For example a markdown grammar wanting to include a C++ grammar.
+This is a very specific tool that is used when you have a TextMate grammar that wants to include/contain another Textmate grammar. For example a Markdown grammar wanting to include a C++ grammar.
 
 ### How do I use it?
 
 Here's an example of two differen LaTeX including an embedded C++ file:
 ```javascript
-let duplicateForEmbedding = require("./index")
+let duplicateForEmbedding = require("textmate-bailout")
 
 // 1.from a url (will download the source every time)
 duplicateForEmbedding({ 
