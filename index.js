@@ -10,11 +10,11 @@ module.exports = duplicateForEmbedding
 
 function duplicateForEmbedding({ url, grammarFilePath, appendScope, bailoutPattern, newFileLocation}) {
     // allow for either a url or a local file
-    let grammar
+    let grammar;
     if (url) {
-        grammar = JSON.parse(downloadUrl(url))
+        grammar = JSON.parse(downloadUrl(url));
     } else if (grammarFilePath) {
-        grammar = JSON.parse(fs.readFileSync(grammarFilePath))
+        grammar = JSON.parse(fs.readFileSync(grammarFilePath));
     }
     grammar["scopeName"] = grammar["scopeName"] + ".embedded." + appendScope;
     rewriteRules(grammar, bailoutPattern);
