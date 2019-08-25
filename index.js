@@ -9,7 +9,7 @@ let downloadUrl = url => {
 
 module.exports = duplicateForEmbedding
 
-function duplicateForEmbedding({ url, grammarFilePath, appendScope, bailoutPattern, newFileLocation }) {
+function duplicateForEmbedding({ url, grammarFilePath, appendScope, bailoutPattern, newFileLocation, deleteMatchRules }) {
     // allow for either a url or a local file
     let grammar
     if (url) {
@@ -21,7 +21,7 @@ function duplicateForEmbedding({ url, grammarFilePath, appendScope, bailoutPatte
     grammar["scopeName"] = grammar["scopeName"] + ".embedded." + appendScope
     rewriteRules(
         originalScopeName,
-        [],
+        deleteMatchRules && selectRulesForDeletion(grammar) || [],
         grammar,
         bailoutPattern
     )
