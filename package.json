@@ -1,0 +1,26 @@
+{
+  "name": "textmate_bailout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeff-hykin/textmate_bailout.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeff-hykin/textmate_bailout/issues"
+  },
+  "homepage": "https://github.com/jeff-hykin/textmate_bailout#readme",
+  "dependencies": {
+    "js-file-download": "^0.4.8",
+    "node-blob": "0.0.2",
+    "sync-request": "^6.1.0",
+    "yargs": "^14.0.0"
+  }
+}
