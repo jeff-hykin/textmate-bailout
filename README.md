@@ -4,7 +4,7 @@ This is a very specific tool that is used when you have a TextMate grammar that 
 
 ### How do I use it?
 
-Here's an example of two differen LaTeX including an embedded C++ file:
+Here's an example of two different ways LaTeX could include an embedded C++ grammar:
 ```javascript
 let duplicateForEmbedding = require("textmate-bailout")
 
